@@ -8,7 +8,7 @@ import {
 import Button from "../../styles/GlobalComponents/Button";
 import { LeftSection } from "./HeroStyles";
 
-const Hero = (props) => (
+const Hero = () => (
   <Section row nopadding>
     <LeftSection>
       <SectionTitle main center>
@@ -16,7 +16,15 @@ const Hero = (props) => (
         My Personal Portfolio
       </SectionTitle>
       <SectionText>Talk about yourself!</SectionText>
-      <Button>Learn More</Button>
+      <Button>
+        <a
+          href="Himika_Dastidar_2022_Master_Resume_v2.pdf"
+          download
+          target="_blank"
+        >
+          Download Resume
+        </a>
+      </Button>
     </LeftSection>
   </Section>
 );

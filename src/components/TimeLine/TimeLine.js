@@ -65,7 +65,7 @@ const Timeline = () => {
     <Section id="about">
       <SectionTitle> About Me</SectionTitle>
       <SectionText>About me!!! </SectionText>
-      {/* <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
+      <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         {TimeLineData.map((item, index) => (
           <CarouselMobileScrollNode
             key={index}
@@ -95,7 +95,7 @@ const Timeline = () => {
             <CarouselButtonDot active={activeItem} />
           </CarouselButton>
         ))}
-      </CarouselButtons> */}
+      </CarouselButtons>
     </Section>
   );
 };
