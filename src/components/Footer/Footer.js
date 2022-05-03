@@ -1,5 +1,5 @@
 import React from "react";
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 import { SocialIcons } from "../Header/HeaderStyles";
 import {
@@ -8,8 +8,6 @@ import {
   LinkItem,
   LinkList,
   LinkTitle,
-  SocialContainer,
-  SocialIconsContainer,
 } from "./FooterStyles";
 
 const Footer = () => {
@@ -22,17 +20,19 @@ const Footer = () => {
             h.dastidar@gmail.com
           </LinkItem>
         </LinkColumn>
-      </LinkList>
-      <SocialIconsContainer>
-        <SocialContainer>
+        <LinkColumn>
+          <LinkTitle>GitHub</LinkTitle>
           <SocialIcons href="https://github.com/velvetarchangel">
             <AiFillGithub size="3rem" />
           </SocialIcons>
+        </LinkColumn>
+        <LinkColumn>
+          <LinkTitle>LinkedIn</LinkTitle>
           <SocialIcons href="https://linkedin.com/hdastidar">
             <AiFillLinkedin size="3rem" />
           </SocialIcons>
-        </SocialContainer>
-      </SocialIconsContainer>
+        </LinkColumn>
+      </LinkList>
     </FooterWrapper>
   );
 };

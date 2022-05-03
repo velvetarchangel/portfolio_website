@@ -1,46 +1,28 @@
 import React from "react";
-import { DiFirebase, DiReact, DiMysql, DiNodejs } from "react-icons/di";
 import {
   Section,
   SectionDivider,
-  SectionText,
   SectionTitle,
 } from "../../styles/GlobalComponents";
-import {
-  List,
-  ListContainer,
-  ListItem,
-  ListParagraph,
-  ListTitle,
-} from "./TechnologiesStyles";
+
+import { ImageContainer, Img } from "../Technologies/TechnologiesStyles";
+import { techonologiesData } from "../../constants/constants";
+
+import { List, ListItem, ListTitle } from "./TechnologiesStyles";
 
 const Technologies = () => (
-  <Section id="tech">
+  <Section id="technologies">
     <SectionDivider />
-    <SectionTitle> Technologies</SectionTitle>
-    <SectionText> I have worked with ..... </SectionText>
+    <SectionTitle main> Technologies</SectionTitle>
     <List>
-      <ListItem>
-        <DiReact size="3rem" />
-        <ListContainer>
-          <ListTitle>Front End</ListTitle>
-          <ListParagraph>Experience with React.js</ListParagraph>
-        </ListContainer>
-      </ListItem>
-      <ListItem>
-        <DiMysql size="3rem" />
-        <ListContainer>
-          <ListTitle>Back-End</ListTitle>
-          <ListParagraph>Experience with Node.js and mySQL</ListParagraph>
-        </ListContainer>
-      </ListItem>
-      <ListItem>
-        <DiFirebase size="3rem" />
-        <ListContainer>
-          <ListTitle>Other</ListTitle>
-          <ListParagraph>Experience with tools like Figma</ListParagraph>
-        </ListContainer>
-      </ListItem>
+      {techonologiesData.map(({ name, source }) => (
+        <ListItem key={name}>
+          <ImageContainer>
+            <Img src={source} />
+            <ListTitle>{name}</ListTitle>
+          </ImageContainer>
+        </ListItem>
+      ))}
     </List>
   </Section>
 );

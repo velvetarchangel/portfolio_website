@@ -1,46 +1,16 @@
 import React, { useState, useRef, useEffect } from "react";
 
-import {
-  CarouselButton,
-  CarouselButtonDot,
-  CarouselButtons,
-  CarouselContainer,
-  CarouselItem,
-  CarouselItemImg,
-  CarouselItemText,
-  CarouselItemTitle,
-  CarouselMobileScrollNode,
-} from "./TimeLineStyles";
+import { CarouselContainer } from "./TimeLineStyles";
 import {
   Section,
   SectionDivider,
   SectionText,
   SectionTitle,
 } from "../../styles/GlobalComponents";
-import { TimeLineData } from "../../constants/constants";
-
-const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
 const Timeline = () => {
   const [activeItem, setActiveItem] = useState(0);
   const carouselRef = useRef();
-
-  const scroll = (node, left) => {
-    return node.scrollTo({ left, behavior: "smooth" });
-  };
-
-  const handleClick = (e, i) => {
-    e.preventDefault();
-
-    if (carouselRef.current) {
-      const scrollLeft = Math.floor(
-        carouselRef.current.scrollWidth * 0.7 * (i / TimeLineData.length)
-      );
-
-      scroll(carouselRef.current, scrollLeft);
-    }
-  };
-
   const handleScroll = () => {
     if (carouselRef.current) {
       const index = Math.round(
@@ -63,39 +33,23 @@ const Timeline = () => {
 
   return (
     <Section id="about">
-      <SectionTitle> About Me</SectionTitle>
-      <SectionText>About me!!! </SectionText>
-      <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
-        {TimeLineData.map((item, index) => (
-          <CarouselMobileScrollNode
-            key={index}
-            final={index === TOTAL_CAROUSEL_COUNT - 1}
-          >
-            <CarouselItem
-              index={index}
-              id={`carousel__item-${index}`}
-              active={activeItem}
-              onClick={(e) => handleClick(e, index)}
-            >
-              <CarouselItemTitle>{item.year}</CarouselItemTitle>
-              <CarouselItemText>{item.text}</CarouselItemText>
-            </CarouselItem>
-          </CarouselMobileScrollNode>
-        ))}
-      </CarouselContainer>
-      <CarouselButtons>
-        {TimeLineData.map((item, index) => (
-          <CarouselButton
-            key={index}
-            index={index}
-            active={activeItem}
-            onClick={(e) => handleClick(e, index)}
-            type="button"
-          >
-            <CarouselButtonDot active={activeItem} />
-          </CarouselButton>
-        ))}
-      </CarouselButtons>
+      <SectionDivider></SectionDivider>
+      <SectionTitle main> About Me</SectionTitle>
+      <SectionText>
+        My name is Himika Dastidar and I'm a graduate from the University of
+        Calgary with a degree in Computer Science. I also have degrees in
+        Biomedical Science and Immunology. After finishing my Biology Degrees I
+        started exploring coding in my free time. Coding allowed me to create
+        and prototype things quickly which I loved. I am passionate about all
+        things web development (front-end, back-end and infrastructure), and am
+        interested in data-science and bioinformatics and biology and would love
+        the opportunity to combine both my passions into a career. Please check
+        out some of my projects below.
+      </SectionText>
+      <CarouselContainer
+        ref={carouselRef}
+        onScroll={handleScroll}
+      ></CarouselContainer>
     </Section>
   );
 };
