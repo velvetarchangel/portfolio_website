@@ -2,7 +2,8 @@ export const projects = [
   {
     title: "Big Brothers Big Sisters Applicant Portal",
     description:
-      "Using VueJS, Firebase and Node.js in SENG 513 my team and I created a mentor onboarding portal for Big Brothers Big Sisters of Calgary. This project is currently being used by BBBS to onboard mentors",
+      "Using VueJS, Firebase and Node.js in my Web Development course my team and I created a mentor onboarding portal for Big Brothers Big Sisters of Calgary. \
+      This project is currently being used by BBBS to onboard mentors",
     image: "/images/1.png",
     tags: ["VueJS", "Node", "Firebase", "Express", "Socket"],
     source:
@@ -13,7 +14,8 @@ export const projects = [
   {
     title: "Library Full Stack Application",
     description:
-      "Full Stack Web Application similar to a city library interface. This project supports two types of users and was using a RESTFul API on top of a mySQL database. Users are able to checkout books, register for library events and return books. Librarians are able to  ",
+      "Full Stack Web Application similar to a city library interface. This project supports two types of users and was using a RESTFul API on top of a mySQL database. \
+      Users are able to checkout books, register for library events and return books. Librarians are able to control users.",
     image: "/images/2.png",
     tags: ["VueJS", "JavaScript", "Node", "Postman", "MySQL"],
     source: "https://github.com/velvetarchangel/Library_Full_Stack_App",
