@@ -1,26 +1,46 @@
 import React from "react";
 
+import styled from "styled-components";
 import { Section, SectionTitle } from "../../styles/GlobalComponents";
-import Button from "../../styles/GlobalComponents/Button";
 import { LeftSection } from "./HeroStyles";
 
 const Hero = () => (
   <Section row nopadding>
     <LeftSection>
       <SectionTitle main center>
-        Welcome to my personal portfolio page
+        Himika Dastidar's Portfolio Page
       </SectionTitle>
       <Button>
-        <a
+        <ButtonText
           href="Himika_Dastidar_2022_Master_Resume_v2.pdf"
           download
           target="_blank"
         >
           Download Resume
-        </a>
+        </ButtonText>
       </Button>
     </LeftSection>
   </Section>
 );
 
+const Button = styled.button`
+  border-radius: 50px;
+  background: #13adc7;
+  opacity: ${({ disabled }) => (disabled ? ".5" : "1")};
+  top: 0;
+  left: 0;
+  border: none;
+  color: #ffffff;
+  border-radius: 50px;
+  display: flex;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  padding: 20px;
+`;
+
+const ButtonText = styled.a`
+  color: #ffffff;
+`;
 export default Hero;

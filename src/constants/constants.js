@@ -3,7 +3,7 @@ export const projects = [
     title: "Big Brothers Big Sisters Applicant Portal",
     description:
       "Using VueJS, Firebase and Node.js in my Web Development course my team and I created a mentor onboarding portal for Big Brothers Big Sisters of Calgary. \
-      This project is currently being used by BBBS to onboard mentors",
+      This project is currently being used by BBBS to onboard mentors.",
     image: "/images/1.png",
     tags: ["VueJS", "Node", "Firebase", "Express", "Socket"],
     source:
@@ -19,7 +19,7 @@ export const projects = [
     image: "/images/2.png",
     tags: ["VueJS", "JavaScript", "Node", "Postman", "MySQL"],
     source: "https://github.com/velvetarchangel/Library_Full_Stack_App",
-    demo: "https://google.com",
+    demo: "",
     id: 1,
   },
   {
@@ -45,15 +45,28 @@ export const projects = [
 ];
 
 export const TimeLineData = [
-  { year: 2017, text: "Started coding in my spare time" },
-  { year: 2018, text: "Applied to become a computer science student" },
-  { year: 2019, text: "Placed 3rd in CalgaryHacks Hackathon" },
-  { year: 2020, text: "Landed my first internship at Benevity" },
+  {
+    year: 2012,
+    text: "Finished my Bachelor's of Health Sciences degree with three summer studentships and several scholarships including an international placement at Imperial College London.",
+  },
+  {
+    year: 2016,
+    text: "Finished my Masters in Microbiology, Immunology and Infectious Diseases. Published three journal articles in prestigious journals including Nature and Cell.",
+  },
+  {
+    year: 2018,
+    text: "Started my Computer Science Degree.",
+  },
+  { year: 2019, text: "Placed 3rd in CalgaryHacks Hackathon." },
+  {
+    year: 2020,
+    text: "Landed my first software development internship at Benevity and attended Grace Hopper Conference with a full scholarship from University of Calgary. Launched a full stack web application for Big Brothers Big Sisters to streamline mentor onboardiing.",
+  },
   {
     year: 2021,
-    text: "Completed my internship at Garmin, won Hack-the-Change YYC Hackathon",
+    text: "Completed my second internship at Garmin, placed first in Hack-the-Change YYC Hackathon and won $2500 to donate to Ronald McDonald House Charities of Alberta. Attended Grace Hopper conference for the 2nd time.",
   },
-  { year: 2022, text: "Completed my Computer Science Degree" },
+  { year: 2022, text: "Completed my Computer Science Degree." },
 ];
 
 export const techonologiesData = [

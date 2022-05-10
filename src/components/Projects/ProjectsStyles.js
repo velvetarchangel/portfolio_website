@@ -13,8 +13,8 @@ export const GridContainer = styled.section`
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   padding: 3rem;
   place-items: center;
-  column-gap: 2rem;
-  row-gap: 3rem;
+  column-gap: 5rem;
+  row-gap: 5rem;
   @media ${(props) => props.theme.breakpoints.sm} {
     display: flex;
     flex-direction: column;
@@ -24,6 +24,7 @@ export const GridContainer = styled.section`
 `;
 
 export const BlogCard = styled.div`
+  background: rgb(19, 173, 199);
   border-radius: 10px;
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   text-align: center;
@@ -33,6 +34,7 @@ export const BlogCard = styled.div`
   }
 `;
 export const TitleContent = styled.div`
+  padding: 10px 10px 10px 10px;
   text-align: center;
   z-index: 20;
   width: 100%;
@@ -40,25 +42,24 @@ export const TitleContent = styled.div`
 
 export const HeaderThree = styled.h3`
   font-weight: 500;
-  letter-spacing: 2px;
-  color: #9cc9e3;
+  color: #ffffff;
   padding: 0.5rem 0;
-  font-size: ${(props) => (props.title ? "3rem" : "2rem")};
+  font-size: 3rem;
 `;
 
 export const Hr = styled.hr`
   width: 50px;
   height: 3px;
   margin: 20px auto;
-  border: 0;
-  background: #d0bb57;
+  border: 1px;
+  border-radius: 1px;
+  background: #ffd700;
 `;
 
 export const Intro = styled.div`
   width: 170px;
   margin: 0 auto;
   color: #dce3e7;
-  font-family: "Droid Serif", serif;
   font-size: 13px;
   font-style: italic;
   line-height: 18px;
@@ -70,7 +71,7 @@ export const CardInfo = styled.p`
   color: #e4e6e7;
   font-style: 2rem;
   line-height: 24px;
-  text-align: justify;
+  text-align: left;
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 0.3rem;
   }
@@ -85,10 +86,11 @@ export const UtilityList = styled.ul`
 `;
 
 export const ExternalLinks = styled.a`
-  color: #d4c0c0;
+  color: #00000;
+  font-weight: bold;
   font-size: 1.6rem;
   padding: 1rem 1.5rem;
-  background: #6b3030;
+  background: #ffd700;
   border-radius: 15px;
   transition: 0.5s;
   &:hover {
@@ -98,10 +100,11 @@ export const ExternalLinks = styled.a`
 
 export const TagList = styled.ul`
   display: flex;
+  color: #6b3030;
   justify-content: space-around;
   padding: 2rem;
 `;
 export const Tag = styled.li`
-  color: #d8bfbf;
+  color: #ffffff;
   font-size: 1.5rem;
 `;

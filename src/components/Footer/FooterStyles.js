@@ -87,3 +87,15 @@ export const LinkTitle = styled.h4`
     margin-bottom: 8px;
   }
 `;
+
+export const SocialIcons = styled.a`
+  transition: 0.3s ease;
+  color: #ffffff;
+  border-radius: 50px;
+  padding: 8px;
+  &:hover {
+    background-color: #0b373d;
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+`;

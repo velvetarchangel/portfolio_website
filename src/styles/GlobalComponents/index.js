@@ -25,7 +25,7 @@ export const Section = styled.section`
 `;
 
 export const SectionTitle = styled.h2`
-  font-weight: 800;
+  font-weight: 600;
   font-size: ${(props) => (props.main ? "65px" : "56px")};
   line-height: ${(props) => (props.main ? "72px" : "56px")};
   width: max-content;
@@ -33,7 +33,7 @@ export const SectionTitle = styled.h2`
   background: linear-gradient(
     121.57deg,
     #ffffff 18.77%,
-    rgba(255, 255, 255, 0.66) 60.15%
+    rgba(255, 255, 255, 0.9) 60.15%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -63,7 +63,7 @@ export const SectionText = styled.p`
   font-size: 24px;
   line-height: 40px;
   font-weight: 300;
-  text-align: justify;
+  text-align: left;
   padding-bottom: 3.6rem;
   color: rgba(255, 255, 255, 0.5);
 
@@ -86,10 +86,7 @@ export const SectionDivider = styled.div`
   height: 6px;
   border-radius: 10px;
   background-color: #fff;
-  background: ${(props) =>
-    props.colorAlt
-      ? "linear-gradient(270deg, #F46737 0%, #945DD6 100%)"
-      : "linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)"};
+  background: #ffd700;
 
   margin: ${(props) => (props.divider ? "4rem 0" : "")};
 
@@ -176,13 +173,13 @@ export const ButtonBack = styled.div`
   width: ${({ alt }) => (alt ? "150px" : "262px")};
   height: ${({ alt }) => (alt ? "52px" : "64px")};
   border-radius: 50px;
+  color: #ffffff;
   font-size: ${({ alt }) => (alt ? "20px" : "24px")};
   font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: ${({ alt, form }) => (alt || form ? "0" : "0 0 80px")};
-  color: #fff;
   background: ${({ alt }) =>
     alt
       ? "linear-gradient(270deg, #ff622e 0%, #B133FF 100%)"
@@ -211,9 +208,9 @@ export const ButtonBack = styled.div`
 export const ButtonFront = styled.button`
   border: none;
   border-radius: 50px;
-  color: #fff;
   display: flex;
   position: absolute;
+  color: #ffffff;
   top: 0;
   left: 0;
   width: 100%;
