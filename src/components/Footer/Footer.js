@@ -14,6 +14,9 @@ const Footer = () => {
     <FooterWrapper>
       <LinkList>
         <LinkColumn>
+          <LinkTitle>Copyright: Himika Dastidar 2022</LinkTitle>
+        </LinkColumn>
+        {/* <LinkColumn>
           <LinkTitle>Email</LinkTitle>
           <LinkItem href="mailto:h.dastidar@gmail.com">
             h.dastidar@gmail.com
@@ -30,7 +33,7 @@ const Footer = () => {
           <SocialIcons href="https://linkedin.com/hdastidar">
             <AiFillLinkedin size="3rem" />
           </SocialIcons>
-        </LinkColumn>
+        </LinkColumn> */}
       </LinkList>
     </FooterWrapper>
   );

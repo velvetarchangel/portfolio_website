@@ -86,7 +86,7 @@ export const UtilityList = styled.ul`
 `;
 
 export const ExternalLinks = styled.a`
-  color: #00000;
+  color: #000000;
   font-weight: bold;
   font-size: 1.6rem;
   padding: 1rem 1.5rem;
@@ -95,6 +95,7 @@ export const ExternalLinks = styled.a`
   transition: 0.5s;
   &:hover {
     background: #801414;
+    color: #ffffff;
   }
 `;
 

@@ -12,6 +12,7 @@ import {
   Div1,
   Div2,
   Div3,
+  Spacer,
   NavLink,
   SocialIcons,
 } from "./HeaderStyles";
