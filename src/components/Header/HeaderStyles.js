@@ -11,7 +11,7 @@ export const Container = styled.div`
   @media ${(props) => props.theme.breakpoints.sm} {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 60px);
+    grid-template-rows: repeat(1, 60px);
     grid-column-gap: 0.5rem;
     grid-row-gap: 0.5rem;
   }
@@ -40,6 +40,7 @@ export const Div2 = styled.div`
   justify-content: space-around;
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 2 / 2 / 3 / 5;
+    display: none;
   }
 `;
 export const Div3 = styled.div`
