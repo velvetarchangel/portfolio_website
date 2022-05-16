@@ -1,13 +1,5 @@
 import React from "react";
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-import {
-  FooterWrapper,
-  LinkColumn,
-  LinkItem,
-  LinkList,
-  LinkTitle,
-  SocialIcons,
-} from "./FooterStyles";
+import { FooterWrapper, LinkColumn, LinkList, LinkTitle } from "./FooterStyles";
 
 const Footer = () => {
   return (
@@ -16,24 +8,6 @@ const Footer = () => {
         <LinkColumn>
           <LinkTitle>Copyright: Himika Dastidar 2022</LinkTitle>
         </LinkColumn>
-        {/* <LinkColumn>
-          <LinkTitle>Email</LinkTitle>
-          <LinkItem href="mailto:h.dastidar@gmail.com">
-            h.dastidar@gmail.com
-          </LinkItem>
-        </LinkColumn>
-        <LinkColumn>
-          <LinkTitle>GitHub</LinkTitle>
-          <SocialIcons href="https://github.com/velvetarchangel">
-            <AiFillGithub size="3rem" />
-          </SocialIcons>
-        </LinkColumn>
-        <LinkColumn>
-          <LinkTitle>LinkedIn</LinkTitle>
-          <SocialIcons href="https://linkedin.com/hdastidar">
-            <AiFillLinkedin size="3rem" />
-          </SocialIcons>
-        </LinkColumn> */}
       </LinkList>
     </FooterWrapper>
   );
