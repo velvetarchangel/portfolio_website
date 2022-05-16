@@ -1,8 +1,8 @@
 import React from "react";
 
 import styled from "styled-components";
-import { Section, SectionTitle } from "../../styles/GlobalComponents";
-import { LeftSection } from "./HeroStyles";
+import { Section } from "../../styles/GlobalComponents";
+import { LeftSection, SectionTitle } from "./HeroStyles";
 
 const Hero = () => (
   <Section row nopadding>
@@ -38,6 +38,11 @@ const Button = styled.button`
   justify-content: center;
   font-size: 24px;
   padding: 20px;
+  @media ${(props) => props.theme.breakpoints.md} {
+    width: 50%;
+    top: 0;
+    left: 0;
+  }
 `;
 
 const ButtonText = styled.a`
