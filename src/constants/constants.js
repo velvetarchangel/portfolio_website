@@ -66,20 +66,30 @@ export const TimeLineData = [
     year: 2021,
     text: "Completed my second internship at Garmin, placed first in Hack-the-Change YYC Hackathon and won $2500 to donate to Ronald McDonald House Charities of Alberta. Attended Grace Hopper conference for the 2nd time.",
   },
-  { year: 2022, text: "Completed my Computer Science Degree." },
+  {
+    year: 2022,
+    text: "Completed my Computer Science Degree. Got hired by Improving and obtained my Professional Scrum Master I certification.",
+  },
+  {
+    year: 2023,
+    text: "Completed Professional Scrum Facilitation Skills certification.",
+  },
 ];
 
 export const techonologiesData = [
+  { name: "VueJS", source: "/images/technology/vuejs.png" },
+  { name: "ReactJS", source: "/images/technology/react.png" },
+  { name: "NodeJS", source: "/images/technology/node-js.png" },
+  { name: "MySQL", source: "/images/technology/mysql.png" },
+  { name: "JavaScript", source: "/images/technology/js.png" },
+  { name: "TypeScript", source: "/images/technology/ts.png" },
   { name: "Python", source: "/images/technology/python.png" },
   { name: "Java", source: "/images/technology/java.png" },
   { name: "C++", source: "/images/technology/cpp.png" },
   { name: "HTML", source: "/images/technology/html-5.png" },
   { name: "CSS", source: "/images/technology/css-3.png" },
-  { name: "JavaScript", source: "/images/technology/js.png" },
-  { name: "VueJS", source: "/images/technology/vuejs.png" },
-  { name: "ReactJS", source: "/images/technology/react.png" },
-  { name: "NodeJS", source: "/images/technology/node-js.png" },
-  { name: "MySQL", source: "/images/technology/mysql.png" },
+  { name: "Swift", source: "/images/technology/swift.png" },
   { name: "Git", source: "/images/technology/github.png" },
   { name: "Postman", source: "/images/technology/postman.png" },
+  { name: "Firebase", source: "/images/technology/firebase.png" },
 ];

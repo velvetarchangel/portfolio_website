@@ -6,7 +6,7 @@ const Footer = () => {
     <FooterWrapper>
       <LinkList>
         <LinkColumn>
-          <LinkTitle>Copyright: Himika Dastidar 2022</LinkTitle>
+          <LinkTitle>Copyright: Himika Dastidar 2023</LinkTitle>
         </LinkColumn>
       </LinkList>
     </FooterWrapper>
