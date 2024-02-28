@@ -72,24 +72,33 @@ export const TimeLineData = [
   },
   {
     year: 2023,
-    text: "Completed Professional Scrum Facilitation Skills certification.",
+    text: "Completed Professional Scrum Facilitation Skills certification and Professional Scrum Product-Owner certification.",
   },
 ];
 
-export const techonologiesData = [
+export const frontendTechnologies = [
   { name: "VueJS", source: "/images/technology/vuejs.png" },
   { name: "ReactJS", source: "/images/technology/react.png" },
-  { name: "NodeJS", source: "/images/technology/node-js.png" },
-  { name: "MySQL", source: "/images/technology/mysql.png" },
   { name: "JavaScript", source: "/images/technology/js.png" },
   { name: "TypeScript", source: "/images/technology/ts.png" },
+  { name: "HTML", source: "/images/technology/html-5.png" },
+  { name: "CSS", source: "/images/technology/css-3.png" },
+];
+
+export const backendTechnologies = [
+  { name: "Spring Boot", source: "/images/technology/spring-boot.png" },
+  { name: "NodeJS", source: "/images/technology/node-js.png" },
+  { name: "MySQL", source: "/images/technology/mysql.png" },
   { name: "Python", source: "/images/technology/python.png" },
   { name: "Java", source: "/images/technology/java.png" },
   { name: "C++", source: "/images/technology/cpp.png" },
-  { name: "HTML", source: "/images/technology/html-5.png" },
-  { name: "CSS", source: "/images/technology/css-3.png" },
-  { name: "Swift", source: "/images/technology/swift.png" },
+];
+
+export const miscTechnologies = [
   { name: "Git", source: "/images/technology/github.png" },
+  { name: "Terraform", source: "/images/technology/terraform.png" },
+  { name: "AWS", source: "/images/technology/aws.png" },
+  { name: "Swift", source: "/images/technology/swift.png" },
   { name: "Postman", source: "/images/technology/postman.png" },
   { name: "Firebase", source: "/images/technology/firebase.png" },
 ];

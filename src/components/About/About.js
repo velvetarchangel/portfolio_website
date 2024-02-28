@@ -14,19 +14,13 @@ const About = () => {
       <SectionDivider></SectionDivider>
       <SectionTitle main> About Me</SectionTitle>
       <SectionText>
-        <b>BSc | BHSc | MSc | PSM-I | PSFS</b>
+        <b>BSc in Computer Science | PSM-I | PSFS | PSPO-I | BHSc Hons. | MSc.</b>
         <br></br>
-        <br></br> My name is Himika Dastidar, and I hold a degree in Computer
-        Science from the University of Calgary. Additionally, I have degrees in
-        Biomedical Science and Immunology. During my academic journey, I
-        discovered my affinity for coding and began exploring it in my free
-        time. Coding became a medium for me to bring ideas to life quickly and
-        efficiently. I have developed a strong passion for web development,
-        encompassing both front-end and back-end aspects, as well as
-        infrastructure. Moreover, I have a keen interest in data science,
-        biology, and bioinformatics, and I aspire to merge these domains in my
-        professional career. Feel free to explore some of my projects showcased
-        below.
+        <br></br> My name is Himika Dastidar, I'm a dynamic and skilled software engineer with a knack for full-stack development. 
+        I've honed my craft using technologies like Java Spring Boot, React, Vue.js, AWS, and Terraform to create robust solutions that exceed client expectations.
+        With a passion for innovation and an eye for detail, I thrive in fast-paced environments where I can push boundaries and learn new things. 
+        My collaborative nature and strong communication skills make me a valuable team player, ensuring smooth integration and successful project outcomes.
+        I'm excited to take on new challenges, learn new technologies and continue delivering top-notch quality user-focused software.
       </SectionText>
     </Section>
   );
