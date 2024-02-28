@@ -12,7 +12,7 @@ const Hero = () => (
       </SectionTitle>
       <Button>
         <ButtonText
-          href="Himika_Dastidar_2023_Master_Resume_v2.pdf"
+          href="Himika_Dastidar_2024_resume.pdf"
           download
           target="_blank"
         >
