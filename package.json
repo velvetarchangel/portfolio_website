@@ -9,6 +9,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@netlify/plugin-nextjs": "^4.41.3",
     "babel-plugin-styled-components": "^2.1.4",
     "netlify": "^13.1.14",
     "next": "^12.1.0",
