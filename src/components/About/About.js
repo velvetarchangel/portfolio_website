@@ -1,6 +1,5 @@
 import React from "react";
 
-import { CarouselContainer } from "./AboutStyles";
 import {
   Section,
   SectionDivider,
